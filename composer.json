@@ -1,0 +1,40 @@
+{
+    "name": "pnx/laravel-ignite-date",
+    "description": "Date component for laravel-ignite.",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Henrik Hautakoski",
+            "email": "henrik.hautakoski@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "pnx/laravel-ignite": "^0.1.1",
+        "illuminate/support": "^7.0|^8.0",
+        "illuminate/view": "^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3",
+        "orchestra/testbench": "^6.24",
+        "laravel/framework": "^8.82"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ignite\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ignite\\DateServiceProvider"
+            ]
+        }
+    }
+}
