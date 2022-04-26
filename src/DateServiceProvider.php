@@ -14,7 +14,8 @@ class DateServiceProvider extends ServiceProvider
      */
     protected $components = [
         View\Components\Date::class,
-        View\Components\DateRange::class
+        View\Components\DateRange::class,
+        View\Components\DateTime::class
     ];
 
     /**
