@@ -2,7 +2,6 @@
 
 namespace Tests;
 
-use Ignite\View\Components\Date;
 use Illuminate\Support\Facades\View;
 use Illuminate\Foundation\Testing\Concerns\InteractsWithViews;
 
@@ -19,10 +18,10 @@ class ViewTest extends TestCase
     {
         $this->withViewErrors([]);
 
-        $component = $this->component(Date::class, ['id' => 'date-id', 'name' => 'xdatex']);
+        $view = $this->blade('<x-ignite-date id="date-id" name="xdatex" />');
 
         // Assert that the input element contains some valid data.
-        $component->assertSeeInOrder([
+        $view->assertSeeInOrder([
             '<input',
             'id="date-id"',
             'name="xdatex"',
