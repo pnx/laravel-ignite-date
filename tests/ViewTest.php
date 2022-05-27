@@ -9,7 +9,7 @@ class ViewTest extends TestCase
 {
     use InteractsWithViews;
 
-    public function test_view_component_is_loaded()
+    public function test_view_script_is_loaded()
     {
         $this->assertTrue(View::exists('ignite::date'));
     }
